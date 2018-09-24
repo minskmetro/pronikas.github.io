@@ -1,1 +1,759 @@
-123
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Минский метрополитен</title>
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages_css/main_page.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto:300,400|Rubik:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/stations_map_imgs.css">
+    <link rel="stylesheet" href="css/stations_map_text.css">
+</head>
+<body>
+
+
+    <div id="whats_new">
+        <h1>Что нового?</h1>
+
+        <p style="color: #29ae47">Блок новостей начат 15.9.18</p>
+
+        <!--<p style="color: #eb0602;">Баг: при открытии поля поиска высота родительского блока увеличивается</p>-->
+
+        <p>6.9.18</p>
+
+        <p style="color: #0061b4">stay tuned / ctrl + F5</p>
+    </div>
+
+    <div id="preloader"></div>
+    <div id="side_menu"></div>
+
+
+
+    <div id="main_content">
+
+        <div id="header">
+
+            <div class="header_top_section">
+                <div class="header_top">
+                    
+                    <div class="logo_info_section">
+                        <ul class="logo_info">
+                            <li>
+                                <a href="index.html" class="logo_link">
+                                    <img src="imgs/logo.png" alt="logo" class="logo">
+                                </a>
+                            </li>
+
+                            <li class="hotline">
+                                <a href="tel:+375 17 219-52-09" class="hotline_number">+375 17 219-52-09</a>
+                                <p class="hotline_text">(горячая линия)</p>
+                            </li>
+
+                            <li>
+                                <a href="#" class="twitter_link">
+                                    <img src="imgs/twitter_icon.png" alt="twitter_icon">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="eng_link">ENG</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navigation_section">
+                        <ul class="navigation">
+                            <li class="show_spoiler">
+                                <a href="#">Информация</a>
+                            </li>
+
+                            <li class="show_spoiler">
+                                <a href="#">Схемы линий</a>
+                            </li>
+
+                            <li class="show_spoiler">
+                                <a href="#">Обращения граждан</a>
+                            </li>
+
+                            <li class="show_spoiler">
+                                <a href="#">Услуги</a>
+                            </li>
+
+                            <li class="separate_navigation_btns">
+                                <a href="#">Новости</a>
+                            </li>
+
+                            <li class="separate_navigation_btns">
+                                <a href="#">Вакансии</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="navigation_spoilers">
+                <div class="navigation_spoilers_section">
+                    <div id="information_spoiler_st" class="information_spoiler_all_css">
+                        <ul class="spoiler_links">
+                            <li><a href="#">График движения поездов</a></li>
+                            <li><a href="#">Оплата проезда</a></li>
+                            <li><a href="#">Правила перевозок</a></li>
+                            <li><a href="#">ЧаВо</a></li>
+                            <li><a href="#">Безопасность</a></li>
+                            <li><a href="#">Пресс-служба</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="information_spoiler_nd" class="information_spoiler_all_css">
+                        <ul class="spoiler_links">
+                            <li><a href="#">Московская</a></li>
+                            <li><a href="#">Автозаводская</a></li>
+                            <li><a href="#">Зеленый Луг</a></li>
+                            <li><a href="#">Перспективы развития</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="information_spoiler_rd" class="information_spoiler_all_css">
+                        <ul class="spoiler_links">
+                            <li><a href="#">Электронные обращения</a></li>
+                            <li><a href="#">Прием по личным вопросам</a></li>
+                            <li><a href="#">Административные процедуры</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="information_spoiler_th" class="information_spoiler_all_css">
+                        <ul class="spoiler_links">
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Аренда помещений</a></li>
+                            <li><a href="#">Автотраспортные услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="content">
+            <div class="header_bottom_section">
+
+                <div id="img_slider">
+                    <div class="main_text">
+                        <h1 class="main_text_h1">Минский метрополитен работает <br>
+                            с <span class="lato_numbers">5:30</span> до <span class="lato_numbers">00:40</span></h1>
+                    </div>
+
+                    <div class="slider_btns">
+                        <ul>
+                            <li><a href="#">График движения поездов</a></li>
+                            <li><a href="#">Стоимость проезда</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div id="create_way_section">
+
+                <div class="create_way_section">
+
+                    <h1 class="create_way_text">Составить маршрут</h1>
+
+                    <ul class="first_station_check">
+
+                        <li class="search_section">
+                            <input type="search" placeholder="Введите станцию отправления" onfocus="openStations()" onfocusout="setTimeout(closeStations, 200)">
+                        </li>
+
+
+                        <ul class="station_section">
+
+                            <li class="station" onclick="test()">
+                                <div class="greencircle circle"></div>
+                                <p class="name" id="greenstation">АЭРОДРОМНАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle circle"></div>
+                                <p class="name" id="redstation">АВТОЗАВОДСКАЯ</p>
+                            </li>
+
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle circle"></div>
+                                <p class="name" id="bluestation">АКАДЕМИЯ НАУК</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle circle"></div>
+                                <p class="name" id="bluestation">БОРИСОВСКИЙ ТРАКТ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="greencircle circle"></div>
+                                <p class="name" id="greenstation">ВОКЗАЛЬНАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle circle"></div>
+                                <p class="name" id="bluestation">ВОСТОК</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle circle"></div>
+                                <p class="name" id="bluestation">ГРУШЕВКА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ИНСТИТУТ КУЛЬТУРЫ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">КАМЕННАЯ ГОРКА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">КУНЦЕВЩИНА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="greencircle"></div>
+                                <p class="name" id="greenstation">КОВАЛЬСКАЯ СЛОБОДА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">КУПАЛОВСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">МАЛИНОВКА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">МИХАЛОВА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">МОГИЛЕВСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">МОЛОДЕЖНАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">МОСКОВСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">НЕМИГА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ОКТЯБРЬСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">ПУШКИНСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">ПЕРВОМАЙСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">ПРОЛЕТАРСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">ПАРТИЗАНСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ПЕТРОВЩИНА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ПЛОЩАДЬ ЛЕНИНА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ПЛОЩАДЬ ПОБЕДЫ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ПЛОЩАДЬ ЯКУБА КОЛОСА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">ПАРК ЧЕЛЮСКИНЦЕВ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="greencircle"></div>
+                                <p class="name" id="greenstation">ПЛОЩАДЬ ФРАНЦИСКА БОГУШЕВИЧА</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">СПОРТИВНАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">ТРАКТОРНЫЙ ЗАВОД</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="bluecircle"></div>
+                                <p class="name" id="bluestation">УРУЧЬЕ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="redcircle"></div>
+                                <p class="name" id="redstation">ФРУНЗЕНСКАЯ</p>
+                            </li>
+
+                            <li class="station" onclick="test()">
+                                <div class="greencircle"></div>
+                                <p class="name" id="greenstation">ЮБИЛЕЙНАЯ ПЛОЩАДЬ</p>
+                            </li>
+
+
+                        </ul>
+
+                    </ul>
+
+
+
+
+                    <ul class="second_station_check">
+
+                        <li class="search_section">
+                            <input type="search" placeholder="Введите станцию прибытия" onfocus="openStations2()" onfocusout="setTimeout(closeStations2, 100)">
+                        </li>
+
+
+                        <ul class="station_section2">
+
+                            <li class="station2" onclick="test2()">
+                                <div class="greencircle circle2"></div>
+                                <p class="name2" id="greenstation">АЭРОДРОМНАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle circle2"></div>
+                                <p class="name2" id="redstation">АВТОЗАВОДСКАЯ</p>
+                            </li>
+
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle circle2"></div>
+                                <p class="name2" id="bluestation">АКАДЕМИЯ НАУК</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle circle2"></div>
+                                <p class="name2" id="bluestation">БОРИСОВСКИЙ ТРАКТ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="greencircle circle2"></div>
+                                <p class="name2" id="greenstation">ВОКЗАЛЬНАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle circle"></div>
+                                <p class="name2" id="bluestation">ВОСТОК</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ГРУШЕВКА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ИНСТИТУТ КУЛЬТУРЫ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">КАМЕННАЯ ГОРКА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">КУНЦЕВЩИНА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="greencircle"></div>
+                                <p class="name2" id="greenstation">КОВАЛЬСКАЯ СЛОБОДА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">КУПАЛОВСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">МАЛИНОВКА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">МИХАЛОВА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">МОГИЛЕВСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">МОЛОДЕЖНАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">МОСКОВСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">НЕМИГА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ОКТЯБРЬСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">ПУШКИНСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">ПЕРВОМАЙСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">ПРОЛЕТАРСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">ПАРТИЗАНСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ПЕТРОВЩИНА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ПЛОЩАДЬ ЛЕНИНА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ПЛОЩАДЬ ПОБЕДЫ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ПЛОЩАДЬ ЯКУБА КОЛОСА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">ПАРК ЧЕЛЮСКИНЦЕВ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="greencircle"></div>
+                                <p class="name2" id="greenstation">ПЛОЩАДЬ ФРАНЦИСКА БОГУШЕВИЧА</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">СПОРТИВНАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">ТРАКТОРНЫЙ ЗАВОД</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="bluecircle"></div>
+                                <p class="name2" id="bluestation">УРУЧЬЕ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="redcircle"></div>
+                                <p class="name2" id="redstation">ФРУНЗЕНСКАЯ</p>
+                            </li>
+
+                            <li class="station2" onclick="test2()">
+                                <div class="greencircle"></div>
+                                <p class="name2" id="greenstation">ЮБИЛЕЙНАЯ ПЛОЩАДЬ</p>
+                            </li>
+
+
+                        </ul>
+
+                    </ul>
+
+                    <button id="createway" onclick="createWay()">Создать маршрут</button>
+
+                    <h1 class="interactive_map_info">Вы также можете воспользоваться</h1>
+                    <a href="javascript:;" class="open_interactive_map" onclick="openCloseMap()">Интерактивной схемой метро</a>
+
+                </div>
+
+            </div>
+            <div id="console_section">
+
+                <div class="console">
+
+                    <div class="startStSection">
+
+                        <span class="start_st_info">Начальная станция:</span>
+
+                        <span class="start_st">0</span>
+
+                    </div>
+
+                    <div class="transferStSection">
+
+                        <span class="transfer_st_info">Следуйте к станциям пересадок:</span>
+
+                        <span class="transfer_st_one">0</span>
+
+                        <span class="transfer_st_slash">/</span>
+
+                        <span class="transfer_st_two">0</span>
+                    </div>
+
+                    <div class="endStSection">
+
+                        <span class="end_st_info">Далее следуйте к станции:</span>
+
+                        <span class="end_st">0</span>
+
+                    </div>
+
+                    <button onclick="closeWayBox()" class="closeWayBoxBtn">Закрыть окно с маршрутом</button>
+
+                </div>
+            </div>
+
+
+            <div class="interactive_map_section">
+
+                <div class="interactive_map">
+
+                    <div class="map_imgs">
+
+                        <img src="imgs/blue_line.png" alt="blue line" class="blue_line_img">
+                        <img src="imgs/red_line.png" alt="red line" class="red_line_img">
+                        <img src="imgs/green_line.png" alt="blue line" class="green_line_img">
+
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_1">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_2">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_3">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_4">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_5">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_6">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_7">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_8">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_9">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_10">
+                        <img src="imgs/blue_station.png" alt="blue station" class="blue_line_station_img_11">
+                        <img src="imgs/blue_station_last.png" alt="blue station last" class="blue_line_station_last_1">
+                        <img src="imgs/blue_station_last.png" alt="blue station last" class="blue_line_station_last_2">
+
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img1 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img2 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img3 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img4 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img5 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img6 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img7 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img8 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img9 red_line_station_img_all_css">
+                        <img src="imgs/red_station.png" alt="red station" class="red_line_station_img10 red_line_station_img_all_css">
+                        <img src="imgs/red_station_last.png" alt="red station last" class="red_line_station_last_1">
+                        <img src="imgs/red_station_last.png" alt="red station last" class="red_line_station_last_2">
+
+                        <img src="imgs/green_station.png" alt="green station" class="green_line_station_img1 green_line_station_img_all_css">
+                        <img src="imgs/green_station.png" alt="green station" class="green_line_station_img2 green_line_station_img_all_css">
+                        <img src="imgs/green_station_last.png" alt="green station last" class="green_line_station_last_1">
+
+                        <img src="imgs/blue_red_interchange.png" alt="blue-red interchange" class="interchange_station_img_1">
+                        <img src="imgs/blue_green_interchange.png" alt="blue-green interchange" class="interchange_station_img_2">
+                        <img src="imgs/red_green_interchange.png" alt="red-green interchange" class="interchange_station_img_3">
+
+                        <img src="imgs/blue_line_number.png" alt="blue number" class="blue_line_number_img">
+                        <img src="imgs/red_line_number.png" alt="red number" class="red_line_number_img">
+                        <img src="imgs/green_line_number.png" alt="green number" class="green_line_number_img">
+
+
+
+                    </div>
+                    
+                    <div class="map_texts">
+                        <a href="#" class="station_text blue_station_text1 station_text_blue_line">Малиновка</a>
+                        <a href="#" class="station_text blue_station_text2 station_text_blue_line">Петровщина</a>
+                        <a href="#" class="station_text blue_station_text3 station_text_blue_line">Михалова</a>
+                        <a href="#" class="station_text blue_station_text4 station_text_blue_line">Грушевка</a>
+                        <a href="#" class="station_text blue_station_text5 station_text_blue_line">Институт культуры</a>
+                        <a href="#" class="station_text blue_station_text6 station_text_blue_line">Площадь победы</a>
+                        <a href="#" class="station_text blue_station_text7 station_text_blue_line">Площадь Якуба Колоса</a>
+                        <a href="#" class="station_text blue_station_text8 station_text_blue_line">Академия наук</a>
+                        <a href="#" class="station_text blue_station_text9 station_text_blue_line">Парк Челюскинцев</a>
+                        <a href="#" class="station_text blue_station_text10 station_text_blue_line">Московская</a>
+                        <a href="#" class="station_text blue_station_text11 station_text_blue_line">Восток</a>
+                        <a href="#" class="station_text blue_station_text12 station_text_blue_line">Борисовский тракт</a>
+                        <a href="#" class="station_text blue_station_text13 station_text_blue_line">Уручье</a>
+
+                        <a href="#" class="station_text red_station_text1 station_text_red_line">Каменная горка</a>
+                        <a href="#" class="station_text red_station_text2 station_text_red_line">Кунцевщина</a>
+                        <a href="#" class="station_text red_station_text3 station_text_red_line">Спортивная</a>
+                        <a href="#" class="station_text red_station_text4 station_text_red_line">Пушкинская</a>
+                        <a href="#" class="station_text red_station_text5 station_text_red_line">Молодежная</a>
+                        <a href="#" class="station_text red_station_text6 station_text_red_line">Немига</a>
+                        <a href="#" class="station_text red_station_text7 station_text_red_line">Первомайская</a>
+                        <a href="#" class="station_text red_station_text8 station_text_red_line">Пролетарская</a>
+                        <a href="#" class="station_text red_station_text9 station_text_red_line">Тракторный завод</a>
+                        <a href="#" class="station_text red_station_text10 station_text_red_line">Партизанская</a>
+                        <a href="#" class="station_text red_station_text11 station_text_red_line">Автозаводская</a>
+                        <a href="#" class="station_text red_station_text12 station_text_red_line">Могилевская</a>
+
+                        <a href="#" class="station_text green_station_text1 station_text_green_line">Площадь Франциска Богушевича</a>
+                        <a href="#" class="station_text green_station_text2 station_text_green_line">Ковальская слобода</a>
+                        <a href="#" class="station_text green_station_text3 station_text_green_line">Аэродромная</a>
+
+
+                        <span class="interchange_station_text1 station_text">
+                            <a href="#" class="station_text_blue_line">Октябрьская</a>
+                            <span>/</span>
+                            <a href="#" class="station_text_red_line">Купаловская</a>
+                        </span>
+
+                        <span class="interchange_station_text2 station_text">
+                            <a href="#" class="station_text_blue_line">Площадь Ленина</a>
+                            <span>/</span>
+                            <a href="#" class="station_text_green_line">Вокзальная</a>
+                        </span>
+
+                        <span class="interchange_station_text3 station_text">
+                            <a href="#" class="station_text_red_line">Фрунзенская</a>
+                            <span>/</span>
+                            <a href="#" class="station_text_green_line">Юбилейная площадь</a>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tips_section">
+
+                <div class="tip_slide">
+
+                    <img src="imgs/credit_card.png" alt="" class="tip_icon">
+                    <h1 class="tip_main_text">Оплата проезда в метро</h1>
+                    <p class="tip_text">Оплата в метро осуществляется при помощи жетонов и пластиковых карт</p>
+
+                    <div class="tips_btns">
+                        <a href="javascript:;" class="tip_btn"></a>
+                        <a href="javascript:;" class="tip_btn"></a>
+                        <a href="javascript:;" class="tip_btn"></a>
+                    </div>
+
+                </div>
+
+
+                </div>
+
+            <div class="news_section">
+
+                <div class="press_name">
+                    <h1 class="press_office_text">Пресс-служба</h1>
+                </div>
+
+                <div class="last_news_block">
+
+                    <div class="last_news_st">
+
+                        <div class="news_article_name_st">
+                            <h1 class="news_main_name">НА ВЫХОДЕ №2-1 СТАНЦИИ «ВОСТОК» – РЕМОНТ</h1>
+                            <p class="news_date">15 авг 2018</p>
+
+                            <div class="news_social_links">
+                                <a href="" class="social_link"><img src="imgs/VK_com-logo_svg.png" alt=""></a>
+                                <a href="" class="social_link"><img src="imgs/facebook-logo-png-5a35528eaa4f08.7998622015134439826976.png" alt=""></a>
+                                <a href="" class="social_link"><img src="imgs/twitter_PNG28.png" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="last_news_nd">
+                        2
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <div class="footer_top_section"></div>
+            <div class="footer_bottom_section"></div>
+        </div>
+
+    </div>
+
+
+
+    <!--<script src="js/list.min.js"></script>-->
+
+
+    <script src="js/preloader.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
